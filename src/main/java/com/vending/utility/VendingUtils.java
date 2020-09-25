@@ -27,10 +27,8 @@ public class VendingUtils extends EnumGenericFunctions {
     }
 
     private static Either<String, String> areArgValid(String[] args) {
-        if(args[0].equalsIgnoreCase("null") || args[1].equalsIgnoreCase("null"))
-            return Either.left(CONSTANTS.INVALID_PATTERN);
-        else
-            return Either.right(CONSTANTS.SUCCESS);
+        if(args[0].equalsIgnoreCase("null") || args[1].equalsIgnoreCase("null")) return Either.left(CONSTANTS.INVALID_PATTERN);
+        else return Either.right(CONSTANTS.SUCCESS);
     }
 
 
